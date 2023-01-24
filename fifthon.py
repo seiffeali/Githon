@@ -234,24 +234,4 @@ ownerhson_id = 1041483862
 
 @YRYYZ.on(events.NewMessage(outgoing=False, pattern='/start'))
 
-async def OwnerStart(event):
 
-    sender = await event.get_sender()
-
-    if sender.id == ownerhson_id :
-
-        order = await event.reply('اهلا مطوري سيف ')
-
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.اعادة تشغيل"))
-
-async def update(event):
-
-    await event.edit("• جارِ اعادة تشغيل السورس ..\n• انتضر 1-2 دقيقة  .")
-
-    await fifthon.disconnect()
-
-    await fifthon.send_message("me", "`اكتملت اعادة تشغيل السورس !`")
-
-print("- Githon Userbot Running ..")
-
-Githon.run_until_disconnected()
