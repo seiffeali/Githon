@@ -84,7 +84,7 @@ async def join_channel():
 
         pass
 
-@YRYYZ.on(events.NewMessage(outgoing=True, pattern=r"شلونك خبارك "))
+@YRYYZ.on(events.NewMessage(outgoing=True, pattern=r"هممم "))
 
 async def _(event):
 
